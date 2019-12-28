@@ -1,3 +1,4 @@
 # kafka
 ## Create Topic
-![Image text](https://github.com/XuanZhouGit/kafka/createTopic.png)
+### Flow
+![Create Topic](https://github.com/XuanZhouGit/kafka/blob/master/createTopic.png)
