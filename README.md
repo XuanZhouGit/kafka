@@ -13,10 +13,17 @@ Kafka是一个开源的由scala语言写的分布式消息系统，最初是Link
 
 ## 基本结构
 
+Producer:向kafka broker发送消息
+Consumer:从kafka broker取消息
+
+
 
 ## 请求处理流程
+
 ![request handle](REQUEST_HANDLE_FLOW.JPG)
+
 请求类型：
+
 ```
   /**
    * Top-level method that handles all requests and multiplexes to the right api
@@ -82,6 +89,7 @@ Kafka是一个开源的由scala语言写的分布式消息系统，最初是Link
 ## Topic
 
 ### 创建流程
+
 ![Create Topic](https://github.com/XuanZhouGit/kafka/blob/master/CreateTopicFlow.JPG)
 ### 处理过程
 
