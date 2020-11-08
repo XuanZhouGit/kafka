@@ -14,6 +14,7 @@ Kafka是一个开源的由scala语言写的分布式消息系统，最初是Link
 ## 基本结构
 
 Producer:向kafka broker发送消息
+
 Consumer:从kafka broker取消息
 
 
