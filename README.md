@@ -1,5 +1,5 @@
 # kafka
-！[kafka](https://github.com/XuanZhouGit/kafka/blob/master/topic.JPG)
+![kafka](https://github.com/XuanZhouGit/kafka/blob/master/topic.JPG)
 Kafka是一个开源的由scala语言写的分布式消息系统，最初是LinkedLIn公司设计的分布式提交日志系，之后成为了Apache的一部分。特性：
 
 可扩展：水平热扩展
