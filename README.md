@@ -1,5 +1,7 @@
 # kafka
+
 ![kafka](https://github.com/XuanZhouGit/kafka/blob/master/topic.JPG)
+
 Kafka是一个开源的由scala语言写的分布式消息系统，最初是LinkedLIn公司设计的分布式提交日志系，之后成为了Apache的一部分。特性：
 
 可扩展：水平热扩展
@@ -14,7 +16,6 @@ Kafka是一个开源的由scala语言写的分布式消息系统，最初是Link
 
 ## 基本结构
 
-
 Producer:向kafka broker发送消息
 
 Consumer:从kafka broker取消息
@@ -24,8 +25,6 @@ Topic: 一个消息队列，每个topic可以分布在多个broker上
 Partition: 当topic很大时，topic可以被分成很多个partition, partition内部是个有序队列，每条消息都会有个有序的id，kafka只保证partition内部消息能有序发送给consumer,不保证topic能整体有序
 
 Broker:单个kafkaServer节点，一个broker可以包含多个topic
-
-
 
 ## 请求处理流程
 
