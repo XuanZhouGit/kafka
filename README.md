@@ -15,16 +15,24 @@ Kafka是一个开源的由scala语言写的分布式消息系统，最初是Link
 高并发：支持多用户同时读写
 
 ## 基本结构
+![structure](https://github.com/XuanZhouGit/kafka/blob/master/structure.JPG)
 
-Producer:向kafka broker发送消息
+Broker:单个kafkaServer节点，一个broker可以包含多个topic
 
-Consumer:从kafka broker取消息
+Producer:将消息发送到kafka broker的topic中，broke接收到消息，将数据追加到topic的某个partition中
+
+Consumer:从kafka broker读消息
 
 Topic: 一个消息队列，每个topic可以分布在多个broker上
 
 Partition: 当topic很大时，topic可以被分成很多个partition, partition内部是个有序队列，每条消息都会有个有序的id，kafka只保证partition内部消息能有序发送给consumer,不保证topic能整体有序
 
-Broker:单个kafkaServer节点，一个broker可以包含多个topic
+Consumer Group:每个consumer都属于一个Consumer Group，用于实现topic的广播或单播
+
+Leader:每个partition有多个副本，有一个leader多个Follower,所有写请求都通过leader
+
+Follower:写请求通过leader广播给所有Follower, Follower需要跟Leader数据进行同步，所以如果leader failover需要进行leader选举
+
 
 ## 请求处理流程
 
