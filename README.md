@@ -25,7 +25,7 @@ Consumer:从kafka broker读消息
 
 Topic: 一个消息队列，每个topic可以分布在多个broker上
 
-Partition: 当topic很大时，topic可以被分成很多个partition(物理分区), partition内部是个有序队列，每条消息都会有个有序的id，kafka只保证partition内部消息能有序发送给consumer,不保证topic能整体有序
+Partition: 当topic很大时，topic可以被分成很多个partition, partition内部是个有序队列，每条消息都会有个有序的id，kafka只保证partition内部消息能有序发送给consumer,不保证topic能整体有序
 
 Consumer Group:每个consumer都属于一个Consumer Group，用于实现topic的广播或单播
 
@@ -107,5 +107,9 @@ Follower:写请求通过leader广播给所有Follower, Follower需要跟Leader�
 ### 创建流程
 
 ![Create Topic](https://github.com/XuanZhouGit/kafka/blob/master/CreateTopicFlow.JPG)
-### 处理过程
+
+### Partition状态转换
+![state_machine]
+
+
 
